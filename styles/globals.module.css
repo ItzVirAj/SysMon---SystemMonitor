@@ -1,0 +1,18 @@
+@import "tailwindcss";
+.container {
+  background: #0f172a;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  margin: 20px auto;
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}

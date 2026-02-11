@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  sysmon:
+    image: sysmon-dashboard
+    container_name: sysmon
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
