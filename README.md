@@ -1,36 +1,194 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 SysMon — System Monitoring Dashboard
 
-## Getting Started
+**SysMon** is a real-time **DevOps System Monitoring Dashboard** built with **Next.js, Docker, and WebSockets**.  
+It tracks **CPU, Memory, Disk, Network, and Docker containers** with a sleek terminal-style UI.
 
-First, run the development server:
+This project is designed to be:
 
-```bash
+✅ Beginner-friendly  
+✅ Resume-ready  
+✅ DevOps-focused  
+✅ Cloud-deployable  
+
+---
+
+## ✨ Features
+
+### 📊 System Metrics
+- Real-time CPU usage (Total, System, User)
+- Memory utilization with progress bars
+- Disk usage
+- Load average (1m, 5m, 15m)
+
+### 🌐 Network Monitoring
+- Live upload/download speed (Mbps)
+- Network throughput (MB/s)
+- IP address, MAC address, active interface
+- Total data transferred since boot
+
+### 🐳 Docker Monitoring
+- Running containers list
+- Live CPU & Memory usage per container
+- Container uptime & status
+- Search & filter containers
+
+### ⚡ Real-Time Updates
+- WebSocket-based live updates (no page refresh)
+- Data refresh every 2 seconds
+
+### 🎨 UI
+- Dark terminal-inspired panels
+- Smooth charts & animations
+- Responsive layout
+
+---
+
+## 📂 Project Structure
+
+sysmon-dashboard/
+│
+├── components/ # UI components
+│ ├── CpuChart.js
+│ ├── DockerPanel.js
+│ ├── NetworkPanel.js
+│ └── ...
+│
+├── pages/
+│ ├── index.js # Main dashboard
+│ └── api/
+│ ├── system.js # REST system metrics
+│ └── socket.js # WebSocket live stats
+│
+├── Dockerfile
+├── package.json
+└── .github/workflows/ # CI/CD pipeline
+
+Got it — you want a clean, proper README.md file content with correct Markdown formatting (no broken blocks).
+Here it is ready to paste into README.md:
+
+🚀 SysMon — System Monitoring Dashboard
+
+SysMon is a real-time DevOps System Monitoring Dashboard built with Next.js, Docker, and WebSockets.
+It tracks CPU, Memory, Disk, Network, and Docker containers with a sleek terminal-style UI.
+
+This project is designed to be:
+
+✅ Beginner-friendly
+✅ Resume-ready
+✅ DevOps-focused
+✅ Cloud-deployable
+
+✨ Features
+📊 System Metrics
+
+Real-time CPU usage (Total, System, User)
+
+Memory utilization with progress bars
+
+Disk usage
+
+Load average (1m, 5m, 15m)
+
+🌐 Network Monitoring
+
+Live upload/download speed (Mbps)
+
+Network throughput (MB/s)
+
+IP address, MAC address, active interface
+
+Total data transferred since boot
+
+🐳 Docker Monitoring
+
+Running containers list
+
+Live CPU & Memory usage per container
+
+Container uptime & status
+
+Search & filter containers
+
+⚡ Real-Time Updates
+
+WebSocket-based live updates (no page refresh)
+
+Data refresh every 2 seconds
+
+🎨 UI
+
+Dark terminal-inspired panels
+
+Smooth charts & animations
+
+Responsive layout
+
+📂 Project Structure
+sysmon-dashboard/
+│
+├── components/        # UI components
+│   ├── CpuChart.js
+│   ├── DockerPanel.js
+│   ├── NetworkPanel.js
+│   └── ...
+│
+├── pages/
+│   ├── index.js       # Main dashboard
+│   └── api/
+│       ├── system.js  # REST system metrics
+│       └── socket.js  # WebSocket live stats
+│
+├── Dockerfile
+├── package.json
+└── .github/workflows/ # CI/CD pipeline
+
+🛠 Local Development
+1️⃣ Install dependencies
+npm install
+
+2️⃣ Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open in your browser:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+http://localhost:3000
 
-## Learn More
+🐳 Run with Docker
+Build Docker image
+docker build -t sysmon-dashboard .
 
-To learn more about Next.js, take a look at the following resources:
+Run Docker container
+docker run -p 3000:3000 sysmon-dashboard
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+App will be available at:
 
-## Deploy on Vercel
+http://localhost:3000
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🎯 Learning Goals Covered
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+✔ Fullstack monitoring dashboard
+✔ Real-time WebSockets
+✔ Docker containerization
+✔ CI/CD basics
+✔ DevOps system metrics
+✔ Cloud-ready architecture
+
+👨‍💻 Author
+
+Built as a DevOps learning project to understand:
+
+Monitoring • Containers • Realtime Systems • CI/CD • Cloud Deployment
+
+⭐ Future Improvements (Optional)
+
+Alert system for high CPU/Memory usage
+
+Historical metrics storage
+
+Multi-server monitoring
+
+Automatic AWS deployment pipeline
+
+SysMon = Your first real DevOps Monitoring System 🚀
