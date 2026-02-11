@@ -123,25 +123,6 @@ Smooth charts & animations
 
 Responsive layout
 
-📂 Project Structure
-sysmon-dashboard/
-│
-├── components/        # UI components
-│   ├── CpuChart.js
-│   ├── DockerPanel.js
-│   ├── NetworkPanel.js
-│   └── ...
-│
-├── pages/
-│   ├── index.js       # Main dashboard
-│   └── api/
-│       ├── system.js  # REST system metrics
-│       └── socket.js  # WebSocket live stats
-│
-├── Dockerfile
-├── package.json
-└── .github/workflows/ # CI/CD pipeline
-
 🛠 Local Development
 1️⃣ Install dependencies
 npm install
