@@ -163,7 +163,7 @@ Built as a DevOps learning project to understand:
 
 Monitoring • Containers • Realtime Systems • CI/CD • Cloud Deployment
 
-⭐ Future Improvements (Optional)
+⭐ Future Improvements
 
 Alert system for high CPU/Memory usage
 
